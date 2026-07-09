@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XMTRADING Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <img src="logo.png" class="logo" alt="XMTRADING">
+
+    <h1>XMTRADING</h1>
+
+    <h3>Account Registration</h3>
+    <h4>アカウント登録</h4>
+
+    <p>
+        Please complete the registration form below.<br>
+        下記フォームに必要事項をご入力ください。
+    </p>
+
+<form id="registerForm">
+
+<label>Full Name<br>氏名</label>
+<input type="text" id="name" required>
+
+<label>Age<br>年齢</label>
+<input type="number" id="age" required>
+
+<label>Sex<br>性別</label>
+
+<select id="sex" required>
+<option value="">Select</option>
+<option>Male / 男性</option>
+<option>Female / 女性</option>
+<option>Other / その他</option>
+</select>
+
+<label>Country<br>国</label>
+
+<input type="text" id="country" value="Japan" required>
+
+<label>Prefecture<br>都道府県</label>
+
+<select id="prefecture" required>
+
+<option value="">Select Prefecture</option>
+
+<option>Tokyo</option>
+<option>Osaka</option>
+<option>Kanagawa</option>
+<option>Hokkaido</option>
+<option>Aichi</option>
+<option>Fukuoka</option>
+<option>Kyoto</option>
+<option>Okinawa</option>
+<option>Saitama</option>
+<option>Chiba</option>
+
+</select>
+
+<label>Email Address<br>メールアドレス</label>
+
+<input type="email" id="email" required>
+
+<label>Phone Number<br>電話番号</label>
+
+<input type="tel" id="phone"
+placeholder="+81 90 1234 5678"
+required>
+
+<div class="agree">
+
+<input type="checkbox" required>
+
+<span>
+I confirm that the information is correct.<br>
+入力内容が正しいことを確認します。
+</span>
+
+</div>
+
+<button type="submit">
+
+Register<br>
+登録する
+
+</button>
+
+</form>
+
+<div id="success">
+
+✅ Registration completed successfully.<br><br>
+
+登録が完了しました。ありがとうございます。
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
