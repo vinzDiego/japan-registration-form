@@ -16,13 +16,14 @@ form.addEventListener("submit", function (e) {
         phone: document.getElementById("phone").value
     };
 
-    fetch(scriptURL, {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
+  fetch(scriptURL, {
+  method: "POST",
+  mode: "no-cors",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "text/plain"
+  }
+})
     .then(() => {
         form.reset();
         success.style.display = "block";
